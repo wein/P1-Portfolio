@@ -1,0 +1,28 @@
+img, embed, object, video {
+	max-width: 100%;
+}
+
+h1 {
+	font-family: GothamHTF-Book, Helvetica, Arial;
+	font-size: 43px;
+}
+h2 {
+	font-family: GothamHTF-Book, Helvetica, Arial;
+	font-size: 27px;
+}
+h3 {
+	font-family: GothamHTF-Book, Helvetica, Arial;
+	font-size: 15px;
+}
+
+@font-face {
+font-family: 'GothamHTF-Book';
+font-style: normal;
+font-weight: normal;
+src: local('GothamHTF-Book'), url('GothamHTF-Book.woff') format('woff');
+}
+
+.featured-link {
+	font-family: GothamHTF-Book, Helvetica, Arial;
+	font-size: 11px;
+}
