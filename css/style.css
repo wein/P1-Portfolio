@@ -1,4 +1,15 @@
-img, embed, object, video {
+@font-face {
+font-family: 'GothamHTF-Book';
+font-style: normal;
+font-weight: normal;
+src: url('GothamHTF-Book.woff');
+/*src: local('GothamHTF-Book'), url('GothamHTF-Book.woff') format('woff');*/
+}
+
+img, 
+embed, 
+object, 
+video {
 	max-width: 100%;
 }
 
@@ -6,20 +17,30 @@ h1 {
 	font-family: GothamHTF-Book, Helvetica, Arial;
 	font-size: 43px;
 }
+
 h2 {
 	font-family: GothamHTF-Book, Helvetica, Arial;
 	font-size: 27px;
 }
+
 h3 {
 	font-family: GothamHTF-Book, Helvetica, Arial;
 	font-size: 15px;
 }
 
-@font-face {
-font-family: 'GothamHTF-Book';
-font-style: normal;
-font-weight: normal;
-src: local('GothamHTF-Book'), url('GothamHTF-Book.woff') format('woff');
+img.center {
+	display: block;
+	margin: 0 auto;
+}
+
+div.project-headline {
+	text-align: center;
+}
+
+@media screen and (min-width: 993px){
+	div.project-headline {
+		text-align: left
+	}
 }
 
 .featured-link {
