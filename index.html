@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -16,7 +18,7 @@
             <div class="col-md-6 pull-left">
                 <img src="img/udacity-logo.jpg" class="img-responsive" alt="Udacity logo">
             </div>
-            <div class="col-md-6 pull-right">
+            <div class="col-md-6 pull-right text-right">
                 <h1>Leonard Wein</h1>
                 <h3>Front-end Ninja</h3>
             </div>
@@ -36,7 +38,7 @@
                 <h2>Featured Work</h2>
             </div>
             <article class="col-md-4 text-center">
-                <img src="http://placehold.it/360x180" class="img-responsive image-center" alt="featured work image">
+                <img src="http://placehold.it/360x180" class="img-responsive image-center" alt="featured work image" data-toggle="modal" data-target="#project1">
                 <h2>Appify</h2>
                 <p class="featured-link"><a href="https://github.com/udacity/Appify/" target="_blank">https://github.com/udacity/Appify/</a></p>
             </article>
@@ -51,6 +53,22 @@
                 <p class="featured-link"><a href="https://github.com/udacity/Bokeh/" target="_blank">https://github.com/udacity/Bokeh/</a></p>
             </article>
         </section>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placehold.it/360x180"> This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
